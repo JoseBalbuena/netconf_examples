@@ -1,0 +1,1238 @@
+INTERFACE DATA{
+      "interfaces": {
+            "@xmlns": "http://openconfig.net/yang/interfaces",
+            "interface": [
+                  {
+                        "name": "Management1",
+                        "config": {
+                              "mtu": "0",
+                              "name": "Management1",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "ethernet": {
+                              "@xmlns": "http://openconfig.net/yang/interfaces/ethernet",
+                              "config": {
+                                    "fec-encoding": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "disabled": "false",
+                                          "fire-code": "false",
+                                          "reed-solomon": "false",
+                                          "reed-solomon544": "false"
+                                    },
+                                    "mac-address": "00:00:00:00:00:00",
+                                    "port-speed": "SPEED_UNKNOWN",
+                                    "sfp-1000base-t": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "#text": "false"
+                                    }
+                              },
+                              "pfc": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "priorities": {
+                                          "priority": [
+                                                {
+                                                      "index": "0",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "0",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "1",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "1",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "2",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "2",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "3",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "3",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "4",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "4",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "5",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "5",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "6",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "6",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "7",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "7",
+                                                            "out-frames": "0"
+                                                      }
+                                                }
+                                          ]
+                                    }
+                              },
+                              "state": {
+                                    "counters": {
+                                          "in-crc-errors": "0",
+                                          "in-fragment-frames": "0",
+                                          "in-jabber-frames": "0",
+                                          "in-mac-control-frames": "0",
+                                          "in-mac-pause-frames": "0",
+                                          "in-maxsize-exceeded": "0",
+                                          "in-oversize-frames": "0",
+                                          "out-mac-control-frames": "0",
+                                          "out-mac-pause-frames": "0"
+                                    },
+                                    "duplex-mode": "FULL",
+                                    "enable-flow-control": "true",
+                                    "hw-mac-address": "00:0c:29:13:fd:b7",
+                                    "mac-address": "00:0c:29:13:fd:b7",
+                                    "negotiated-duplex-mode": "FULL",
+                                    "negotiated-port-speed": "SPEED_1GB",
+                                    "port-speed": "SPEED_1GB",
+                                    "supported-speeds": [
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_AUTO"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_10MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_1GB"
+                                          }
+                                    ]
+                              }
+                        },
+                        "state": {
+                              "admin-status": "UP",
+                              "counters": {
+                                    "carrier-transitions": "4",
+                                    "in-broadcast-pkts": "0",
+                                    "in-discards": "0",
+                                    "in-errors": "0",
+                                    "in-fcs-errors": "0",
+                                    "in-multicast-pkts": "0",
+                                    "in-octets": "647117",
+                                    "in-pkts": "7796",
+                                    "in-unicast-pkts": "7796",
+                                    "out-broadcast-pkts": "0",
+                                    "out-discards": "0",
+                                    "out-errors": "0",
+                                    "out-multicast-pkts": "0",
+                                    "out-octets": "326733",
+                                    "out-pkts": "1133",
+                                    "out-unicast-pkts": "1133"
+                              },
+                              "ifindex": "999001",
+                              "inactive": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "#text": "false"
+                              },
+                              "last-change": "1688651344432376576",
+                              "management": "true",
+                              "mtu": "0",
+                              "name": "Management1",
+                              "oper-status": "UP",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "subinterfaces": {
+                              "subinterface": {
+                                    "index": "0",
+                                    "ipv4": {
+                                          "@xmlns": "http://openconfig.net/yang/interfaces/ip",
+                                          "addresses": {
+                                                "address": {
+                                                      "ip": "10.71.0.200",
+                                                      "config": {
+                                                            "ip": "10.71.0.200",
+                                                            "prefix-length": "24"
+                                                      },
+                                                      "state": {
+                                                            "ip": "10.71.0.200",
+                                                            "origin": "STATIC",
+                                                            "prefix-length": "24"
+                                                      }
+                                                }
+                                          },
+                                          "neighbors": {
+                                                "neighbor": [
+                                                      {
+                                                            "ip": "10.71.0.1",
+                                                            "config": {
+                                                                  "ip": "10.71.0.1"
+                                                            },
+                                                            "state": {
+                                                                  "ip": "10.71.0.1",
+                                                                  "link-layer-address": "00:21:1c:a3:fd:c8",
+                                                                  "origin": "DYNAMIC"
+                                                            }
+                                                      },
+                                                      {
+                                                            "ip": "10.71.0.50",
+                                                            "config": {
+                                                                  "ip": "10.71.0.50"
+                                                            },
+                                                            "state": {
+                                                                  "ip": "10.71.0.50",
+                                                                  "link-layer-address": "00:0c:29:4e:46:25",
+                                                                  "origin": "DYNAMIC"
+                                                            }
+                                                      }
+                                                ]
+                                          }
+                                    }
+                              }
+                        }
+                  },
+                  {
+                        "name": "Ethernet2",
+                        "config": {
+                              "mtu": "0",
+                              "name": "Ethernet2",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "ethernet": {
+                              "@xmlns": "http://openconfig.net/yang/interfaces/ethernet",
+                              "config": {
+                                    "fec-encoding": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "disabled": "false",
+                                          "fire-code": "false",
+                                          "reed-solomon": "false",
+                                          "reed-solomon544": "false"
+                                    },
+                                    "mac-address": "00:00:00:00:00:00",
+                                    "port-speed": "SPEED_UNKNOWN",
+                                    "sfp-1000base-t": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "#text": "false"
+                                    }
+                              },
+                              "pfc": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "priorities": {
+                                          "priority": [
+                                                {
+                                                      "index": "0",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "0",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "1",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "1",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "2",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "2",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "3",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "3",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "4",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "4",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "5",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "5",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "6",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "6",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "7",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "7",
+                                                            "out-frames": "0"
+                                                      }
+                                                }
+                                          ]
+                                    }
+                              },
+                              "state": {
+                                    "auto-negotiate": "false",
+                                    "counters": {
+                                          "in-crc-errors": "0",
+                                          "in-fragment-frames": "0",
+                                          "in-jabber-frames": "0",
+                                          "in-mac-control-frames": "0",
+                                          "in-mac-pause-frames": "0",
+                                          "in-maxsize-exceeded": "0",
+                                          "in-oversize-frames": "0",
+                                          "out-mac-control-frames": "0",
+                                          "out-mac-pause-frames": "0"
+                                    },
+                                    "duplex-mode": "FULL",
+                                    "hw-mac-address": "00:0c:29:13:fd:cb",
+                                    "mac-address": "00:0c:29:13:fd:cb",
+                                    "negotiated-port-speed": "SPEED_UNKNOWN",
+                                    "port-speed": "SPEED_1GB",
+                                    "supported-speeds": [
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_50GB_1LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_200GB_8LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_40GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100GB_2LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_2500MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_10MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_50GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_10GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_25GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_400GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_5GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_200GB_4LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_1GB"
+                                          }
+                                    ]
+                              }
+                        },
+                        "state": {
+                              "admin-status": "UP",
+                              "counters": {
+                                    "carrier-transitions": "2",
+                                    "in-broadcast-pkts": "6594",
+                                    "in-discards": "4218",
+                                    "in-errors": "652",
+                                    "in-fcs-errors": "0",
+                                    "in-multicast-pkts": "9022",
+                                    "in-octets": "101693774",
+                                    "in-pkts": "224499",
+                                    "in-unicast-pkts": "208883",
+                                    "out-broadcast-pkts": "0",
+                                    "out-discards": "0",
+                                    "out-errors": "0",
+                                    "out-multicast-pkts": "181",
+                                    "out-octets": "29823",
+                                    "out-pkts": "181",
+                                    "out-unicast-pkts": "0"
+                              },
+                              "ifindex": "2",
+                              "inactive": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "#text": "false"
+                              },
+                              "last-change": "1688651357019929344",
+                              "management": "false",
+                              "mtu": "0",
+                              "name": "Ethernet2",
+                              "oper-status": "UP",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "subinterfaces": {
+                              "subinterface": {
+                                    "index": "0"
+                              }
+                        }
+                  },
+                  {
+                        "name": "Ethernet1",
+                        "config": {
+                              "mtu": "0",
+                              "name": "Ethernet1",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "ethernet": {
+                              "@xmlns": "http://openconfig.net/yang/interfaces/ethernet",
+                              "config": {
+                                    "fec-encoding": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "disabled": "false",
+                                          "fire-code": "false",
+                                          "reed-solomon": "false",
+                                          "reed-solomon544": "false"
+                                    },
+                                    "mac-address": "00:00:00:00:00:00",
+                                    "port-speed": "SPEED_UNKNOWN",
+                                    "sfp-1000base-t": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "#text": "false"
+                                    }
+                              },
+                              "pfc": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "priorities": {
+                                          "priority": [
+                                                {
+                                                      "index": "0",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "0",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "1",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "1",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "2",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "2",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "3",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "3",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "4",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "4",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "5",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "5",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "6",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "6",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "7",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "7",
+                                                            "out-frames": "0"
+                                                      }
+                                                }
+                                          ]
+                                    }
+                              },
+                              "state": {
+                                    "auto-negotiate": "false",
+                                    "counters": {
+                                          "in-crc-errors": "0",
+                                          "in-fragment-frames": "0",
+                                          "in-jabber-frames": "0",
+                                          "in-mac-control-frames": "0",
+                                          "in-mac-pause-frames": "0",
+                                          "in-maxsize-exceeded": "0",
+                                          "in-oversize-frames": "0",
+                                          "out-mac-control-frames": "0",
+                                          "out-mac-pause-frames": "0"
+                                    },
+                                    "duplex-mode": "FULL",
+                                    "hw-mac-address": "00:0c:29:13:fd:c1",
+                                    "mac-address": "00:0c:29:13:fd:c1",
+                                    "negotiated-port-speed": "SPEED_UNKNOWN",
+                                    "port-speed": "SPEED_1GB",
+                                    "supported-speeds": [
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_5GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_400GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_10GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_200GB_8LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_10MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100GB_2LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_1GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_40GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_200GB_4LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_50GB_1LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_50GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_2500MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_25GB"
+                                          }
+                                    ]
+                              }
+                        },
+                        "state": {
+                              "admin-status": "UP",
+                              "counters": {
+                                    "carrier-transitions": "2",
+                                    "in-broadcast-pkts": "6595",
+                                    "in-discards": "4232",
+                                    "in-errors": "655",
+                                    "in-fcs-errors": "0",
+                                    "in-multicast-pkts": "6359",
+                                    "in-octets": "101510515",
+                                    "in-pkts": "221808",
+                                    "in-unicast-pkts": "208854",
+                                    "out-broadcast-pkts": "0",
+                                    "out-discards": "0",
+                                    "out-errors": "0",
+                                    "out-multicast-pkts": "2846",
+                                    "out-octets": "179130",
+                                    "out-pkts": "2846",
+                                    "out-unicast-pkts": "0"
+                              },
+                              "ifindex": "1",
+                              "inactive": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "#text": "false"
+                              },
+                              "last-change": "1688651357018347520",
+                              "management": "false",
+                              "mtu": "0",
+                              "name": "Ethernet1",
+                              "oper-status": "UP",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "subinterfaces": {
+                              "subinterface": {
+                                    "index": "0"
+                              }
+                        }
+                  },
+                  {
+                        "name": "Ethernet3",
+                        "config": {
+                              "mtu": "0",
+                              "name": "Ethernet3",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "ethernet": {
+                              "@xmlns": "http://openconfig.net/yang/interfaces/ethernet",
+                              "config": {
+                                    "fec-encoding": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "disabled": "false",
+                                          "fire-code": "false",
+                                          "reed-solomon": "false",
+                                          "reed-solomon544": "false"
+                                    },
+                                    "mac-address": "00:00:00:00:00:00",
+                                    "port-speed": "SPEED_UNKNOWN",
+                                    "sfp-1000base-t": {
+                                          "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                          "#text": "false"
+                                    }
+                              },
+                              "pfc": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "priorities": {
+                                          "priority": [
+                                                {
+                                                      "index": "0",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "0",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "1",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "1",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "2",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "2",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "3",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "3",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "4",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "4",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "5",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "5",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "6",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "6",
+                                                            "out-frames": "0"
+                                                      }
+                                                },
+                                                {
+                                                      "index": "7",
+                                                      "state": {
+                                                            "in-frames": "0",
+                                                            "index": "7",
+                                                            "out-frames": "0"
+                                                      }
+                                                }
+                                          ]
+                                    }
+                              },
+                              "state": {
+                                    "auto-negotiate": "false",
+                                    "counters": {
+                                          "in-crc-errors": "0",
+                                          "in-fragment-frames": "0",
+                                          "in-jabber-frames": "0",
+                                          "in-mac-control-frames": "0",
+                                          "in-mac-pause-frames": "0",
+                                          "in-maxsize-exceeded": "0",
+                                          "in-oversize-frames": "0",
+                                          "out-mac-control-frames": "0",
+                                          "out-mac-pause-frames": "0"
+                                    },
+                                    "duplex-mode": "FULL",
+                                    "hw-mac-address": "00:0c:29:13:fd:d5",
+                                    "mac-address": "00:0c:29:13:fd:d5",
+                                    "negotiated-port-speed": "SPEED_UNKNOWN",
+                                    "port-speed": "SPEED_1GB",
+                                    "supported-speeds": [
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_25GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_400GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_5GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_2500MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100GB_2LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100MB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_200GB_4LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_40GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_100GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_50GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_50GB_1LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_200GB_8LANE"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_10GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_1GB"
+                                          },
+                                          {
+                                                "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                                "#text": "SPEED_10MB"
+                                          }
+                                    ]
+                              }
+                        },
+                        "state": {
+                              "admin-status": "UP",
+                              "counters": {
+                                    "carrier-transitions": "2",
+                                    "in-broadcast-pkts": "6593",
+                                    "in-discards": "4257",
+                                    "in-errors": "653",
+                                    "in-fcs-errors": "0",
+                                    "in-multicast-pkts": "9023",
+                                    "in-octets": "101700894",
+                                    "in-pkts": "224480",
+                                    "in-unicast-pkts": "208864",
+                                    "out-broadcast-pkts": "0",
+                                    "out-discards": "0",
+                                    "out-errors": "0",
+                                    "out-multicast-pkts": "181",
+                                    "out-octets": "29823",
+                                    "out-pkts": "181",
+                                    "out-unicast-pkts": "0"
+                              },
+                              "ifindex": "3",
+                              "inactive": {
+                                    "@xmlns": "http://arista.com/yang/openconfig/interfaces/augments",
+                                    "#text": "false"
+                              },
+                              "last-change": "1688651357019097088",
+                              "management": "false",
+                              "mtu": "0",
+                              "name": "Ethernet3",
+                              "oper-status": "UP",
+                              "type": {
+                                    "@xmlns:ianaift": "urn:ietf:params:xml:ns:yang:iana-if-type",
+                                    "#text": "ianaift:ethernetCsmacd"
+                              }
+                        },
+                        "subinterfaces": {
+                              "subinterface": {
+                                    "index": "0"
+                              }
+                        }
+                  }
+            ]
+      }
+}HW DATA{
+      "components": {
+            "@xmlns": "http://openconfig.net/yang/platform",
+            "component": [
+                  {
+                        "name": "Chassis",
+                        "config": {
+                              "name": "Chassis"
+                        },
+                        "state": {
+                              "base-mac-address": "00:0c:29:6f:67:f9",
+                              "description": "vEOS for lab use",
+                              "firmware-version": "Aboot-veos-8.0.1",
+                              "memory": {
+                                    "available": "4076908544",
+                                    "utilized": "1116160000"
+                              },
+                              "mfg-name": "Arista",
+                              "name": "Chassis",
+                              "oper-status": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:ACTIVE"
+                              },
+                              "part-no": "vEOS-lab",
+                              "removable": "false",
+                              "serial-no": "5E129F09AEA01E016513CDBD8BF909E5",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:CHASSIS"
+                              }
+                        },
+                        "subcomponents": {
+                              "subcomponent": [
+                                    {
+                                          "name": "EOS",
+                                          "config": {
+                                                "name": "EOS"
+                                          },
+                                          "state": {
+                                                "name": "EOS"
+                                          }
+                                    },
+                                    {
+                                          "name": "Aboot",
+                                          "config": {
+                                                "name": "Aboot"
+                                          },
+                                          "state": {
+                                                "name": "Aboot"
+                                          }
+                                    },
+                                    {
+                                          "name": "BIOS",
+                                          "config": {
+                                                "name": "BIOS"
+                                          },
+                                          "state": {
+                                                "name": "BIOS"
+                                          }
+                                    },
+                                    {
+                                          "name": "SwitchChip0",
+                                          "config": {
+                                                "name": "SwitchChip0"
+                                          },
+                                          "state": {
+                                                "name": "SwitchChip0"
+                                          }
+                                    }
+                              ]
+                        }
+                  },
+                  {
+                        "name": "CPU3",
+                        "config": {
+                              "name": "CPU3"
+                        },
+                        "cpu": {
+                              "utilization": {
+                                    "@xmlns": "http://openconfig.net/yang/platform/cpu",
+                                    "state": {
+                                          "avg": "2",
+                                          "instant": "1",
+                                          "interval": "1000000000000",
+                                          "max": "10",
+                                          "max-time": "3377306833495095296",
+                                          "min": "0",
+                                          "min-time": "3377307553498542080"
+                                    }
+                              }
+                        },
+                        "state": {
+                              "description": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+                              "mfg-name": "GenuineIntel",
+                              "name": "CPU3",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:CPU"
+                              }
+                        }
+                  },
+                  {
+                        "name": "CPU0",
+                        "config": {
+                              "name": "CPU0"
+                        },
+                        "cpu": {
+                              "utilization": {
+                                    "@xmlns": "http://openconfig.net/yang/platform/cpu",
+                                    "state": {
+                                          "avg": "1",
+                                          "instant": "2",
+                                          "interval": "1000000000000",
+                                          "max": "15",
+                                          "max-time": "3377306453498806784",
+                                          "min": "0",
+                                          "min-time": "3377307803504904704"
+                                    }
+                              }
+                        },
+                        "state": {
+                              "description": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+                              "mfg-name": "GenuineIntel",
+                              "name": "CPU0",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:CPU"
+                              }
+                        }
+                  },
+                  {
+                        "name": "CPU1",
+                        "config": {
+                              "name": "CPU1"
+                        },
+                        "cpu": {
+                              "utilization": {
+                                    "@xmlns": "http://openconfig.net/yang/platform/cpu",
+                                    "state": {
+                                          "avg": "2",
+                                          "instant": "1",
+                                          "interval": "1000000000000",
+                                          "max": "18",
+                                          "max-time": "3377306453499257856",
+                                          "min": "0",
+                                          "min-time": "3377307353490918912"
+                                    }
+                              }
+                        },
+                        "state": {
+                              "description": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+                              "mfg-name": "GenuineIntel",
+                              "name": "CPU1",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:CPU"
+                              }
+                        }
+                  },
+                  {
+                        "name": "CPU2",
+                        "config": {
+                              "name": "CPU2"
+                        },
+                        "cpu": {
+                              "utilization": {
+                                    "@xmlns": "http://openconfig.net/yang/platform/cpu",
+                                    "state": {
+                                          "avg": "1",
+                                          "instant": "3",
+                                          "interval": "1000000000000",
+                                          "max": "6",
+                                          "max-time": "3377306773495103488",
+                                          "min": "0",
+                                          "min-time": "3377307673500191744"
+                                    }
+                              }
+                        },
+                        "state": {
+                              "description": "Intel(R) Xeon(R) CPU           E5649  @ 2.53GHz",
+                              "mfg-name": "GenuineIntel",
+                              "name": "CPU2",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:CPU"
+                              }
+                        }
+                  },
+                  {
+                        "name": "EOS",
+                        "config": {
+                              "name": "EOS"
+                        },
+                        "state": {
+                              "name": "EOS",
+                              "oper-status": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:ACTIVE"
+                              },
+                              "parent": "Chassis",
+                              "software-version": "4.30.1F",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:OPERATING_SYSTEM"
+                              }
+                        }
+                  },
+                  {
+                        "name": "Aboot",
+                        "config": {
+                              "name": "Aboot"
+                        },
+                        "state": {
+                              "name": "Aboot",
+                              "parent": "Chassis",
+                              "software-version": "Aboot-veos-8.0.1",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:BOOT_LOADER"
+                              }
+                        }
+                  },
+                  {
+                        "name": "BIOS",
+                        "config": {
+                              "name": "BIOS"
+                        },
+                        "state": {
+                              "name": "BIOS",
+                              "parent": "Chassis",
+                              "software-version": "Aboot-veos-8.0.1",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:BIOS"
+                              }
+                        }
+                  },
+                  {
+                        "name": "SwitchChip0",
+                        "config": {
+                              "name": "SwitchChip0"
+                        },
+                        "state": {
+                              "description": "Switching ASIC Chip 0",
+                              "firmware-version": "Aboot-veos-8.0.1",
+                              "id": "SwitchAsic0",
+                              "name": "SwitchChip0",
+                              "parent": "Chassis",
+                              "part-no": "vEOS-lab",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:INTEGRATED_CIRCUIT"
+                              }
+                        },
+                        "subcomponents": {
+                              "subcomponent": [
+                                    {
+                                          "name": "Ethernet2-Port",
+                                          "config": {
+                                                "name": "Ethernet2-Port"
+                                          },
+                                          "state": {
+                                                "name": "Ethernet2-Port"
+                                          }
+                                    },
+                                    {
+                                          "name": "Ethernet1-Port",
+                                          "config": {
+                                                "name": "Ethernet1-Port"
+                                          },
+                                          "state": {
+                                                "name": "Ethernet1-Port"
+                                          }
+                                    },
+                                    {
+                                          "name": "Ethernet3-Port",
+                                          "config": {
+                                                "name": "Ethernet3-Port"
+                                          },
+                                          "state": {
+                                                "name": "Ethernet3-Port"
+                                          }
+                                    }
+                              ]
+                        }
+                  },
+                  {
+                        "name": "chassis-hostName",
+                        "chassis": {
+                              "alarms": {
+                                    "@xmlns": "http://openconfig.net/yang/hercules/platform",
+                                    "critical-state": {
+                                          "status": "false"
+                                    }
+                              }
+                        },
+                        "config": {
+                              "name": "chassis-hostName"
+                        }
+                  },
+                  {
+                        "name": "Ethernet2-Port",
+                        "config": {
+                              "name": "Ethernet2-Port"
+                        },
+                        "state": {
+                              "location": "2",
+                              "name": "Ethernet2-Port",
+                              "parent": "SwitchChip0",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:PORT"
+                              }
+                        }
+                  },
+                  {
+                        "name": "Ethernet1-Port",
+                        "config": {
+                              "name": "Ethernet1-Port"
+                        },
+                        "state": {
+                              "location": "1",
+                              "name": "Ethernet1-Port",
+                              "parent": "SwitchChip0",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:PORT"
+                              }
+                        }
+                  },
+                  {
+                        "name": "Ethernet3-Port",
+                        "config": {
+                              "name": "Ethernet3-Port"
+                        },
+                        "state": {
+                              "location": "3",
+                              "name": "Ethernet3-Port",
+                              "parent": "SwitchChip0",
+                              "type": {
+                                    "@xmlns:oc-platform-types": "http://openconfig.net/yang/platform-types",
+                                    "#text": "oc-platform-types:PORT"
+                              }
+                        }
+                  }
+            ]
+      }
+}
